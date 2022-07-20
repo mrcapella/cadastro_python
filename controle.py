@@ -32,14 +32,14 @@ def gerar_pdf():
     except:
         print("Erro na geração do arquivo PDF!")
 
-#Função para receber os valores dos elementos do app
+#Função para receber os valores dos elementos do apps
 def funcao_principal():
     linha1 = cadastro.lineEdit.text()
     linha2 = cadastro.lineEdit_2.text()
     linha3 = cadastro.lineEdit_3.text()
     linha4 = cadastro.cbCategoria.currentText()
 
-    if((linha1 == "") or (linha2 == "") or (linha3 == "") or (linha4 == "Selecione")):    
+    if ((linha1 == "") or (linha2 == "") or (linha3 == "") or (linha4 == "Selecione")):    
         messagebox.showwarning(title="Campos em branco", message="Todos os campos devem ser preenchidos.")
     else:
         #Query para inserir registro no db
