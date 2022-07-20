@@ -32,7 +32,7 @@ def gerar_pdf():
     except:
         print("Erro na geração do arquivo PDF!")
 
-#Função para receber os valores dos elementos do apps
+#Função para receber os valores dos elementos do app
 def funcao_principal():
     linha1 = cadastro.lineEdit.text()
     linha2 = cadastro.lineEdit_2.text()

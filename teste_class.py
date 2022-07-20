@@ -1,7 +1,7 @@
 import time
 
 class TimerError(Exception):
-    """A custom exception used to report errors in use of Timer class"""
+    print("Erro no controlador")
 
 class Timer:
     def __init__(self):
@@ -17,7 +17,7 @@ class Timer:
         t.stop()
 
     def stop(self):
-        """Stop the timer, and report the elapsed time"""
+        #Para o timer e report o
         if self._start_time is None:
             raise TimerError(f"Timer is not running. Use .start() to start it")
 
